@@ -1,0 +1,52 @@
+package.json
+  s_d50f6e712afc08::t_48781058cee275 9-12
+.github/workflows/ci.yml
+  s_d50f6e712afc08::t_367f3734fcf2d3 37-38
+  s_d50f6e712afc08::t_ab1707b45f75eb 3-7,35-36,39,47,50,53,55-56
+skills/libpeek/scripts/files.mjs
+  s_d50f6e712afc08::t_7a3ccef3ba4697 1-219
+tests/lib.test.mjs
+  s_d50f6e712afc08::t_f404538364cd2c 1-121
+README.md
+  s_d50f6e712afc08::t_0921662b889c79 45,48-49,51-52,54-55,58-62
+  s_d50f6e712afc08::t_81dc56b4fbf6c3 66-69
+  s_d50f6e712afc08::t_f4850a3a7b55de 35,38
+  s_d50f6e712afc08::t_63187dfb2266e3 11
+AGENTS.md
+  s_d50f6e712afc08::t_47c679de738e13 6-22,25,33,35-37,39,41-44,54-56,58-73,77-82,89,97-98,106,112-113,115,118-122
+skills/libpeek/scripts/npm.mjs
+  s_d50f6e712afc08::t_71ae03a9009ade 205,230
+  s_d50f6e712afc08::t_dbd2448492eb00 2-3,5-7,9-13,17,19-20,23,30,34,41,43-44,46-50,52,55-60,66,95,104-121,124-127,140,166-199,243-244,246,250,260,270-272,275,277,280-282,288,294,299-300,304,333,341,357,359-362,371,373,383,404,417,431,453-455,457,459-460,469
+skills/libpeek/scripts/index.mjs
+  s_d50f6e712afc08::t_c0dc61e2939c5d 1-251
+tests/npm.test.mjs
+  s_d50f6e712afc08::t_011cd02b064fe5 1-99
+skills/libpeek/SKILL.md
+  s_d50f6e712afc08::t_99354698ee3f4b 17,23-25,29-31,34-37,40,42-47,51,57,61-63,65-66,68-70,74-77,81-85
+skills/libpeek/references/usage.md
+  s_d50f6e712afc08::t_483303e734a251 3-29,34,39-43,52-54,60,62-64,68,73-74,77-85,90-91,94,97,99-100,103,106
+skills/libpeek/references/security.md
+  s_d50f6e712afc08::t_0e612dee5d90c3 45-49,54-57
+  s_d50f6e712afc08::t_b2af2bfd3cb29a 5-7
+README.zh-CN.md
+  s_d50f6e712afc08::t_736ee1a93acfa0 32,35
+  s_d50f6e712afc08::t_f2fadced7f57d9 42,45-46,48-49,51-52,55
+  s_d50f6e712afc08::t_7088fdc7cd81dc 59
+  s_d50f6e712afc08::t_e10b38fb9c531e 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2bb00d51185ab35efa830c9701dac2182a55a4a3",
+  "prompts": {},
+  "sessions": {
+    "s_d50f6e712afc08": {
+      "agent_id": {
+        "tool": "codefuse",
+        "id": "37a6ab66-9242-442f-9d3f-5445211b600d",
+        "model": "codefuse_official_channel/GLM-5.3-Flash"
+      },
+      "human_author": "yunchen.wy <yunchen.wy@antgroup.com>"
+    }
+  }
+}
