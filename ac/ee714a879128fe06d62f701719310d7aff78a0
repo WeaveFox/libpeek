@@ -1,0 +1,19 @@
+.husky/commit-msg
+  s_d50f6e712afc08::t_6de7aa3df59f19 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "acee714a879128fe06d62f701719310d7aff78a0",
+  "prompts": {},
+  "sessions": {
+    "s_d50f6e712afc08": {
+      "agent_id": {
+        "tool": "codefuse",
+        "id": "37a6ab66-9242-442f-9d3f-5445211b600d",
+        "model": "codefuse_official_channel/GLM-5.3-Flash"
+      },
+      "human_author": "yunchen.wy <yunchen.wy@antgroup.com>"
+    }
+  }
+}
