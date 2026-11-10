@@ -1,0 +1,52 @@
+# CI - Syntax check, SKILL.md frontmatter check, and real-network smoke test.
+#
+# The whole runtime is one auditable script, so CI stays deliberately light:
+# `node --check` for syntax, a grep for the SKILL.md frontmatter, and four
+# real invocations against public CDNs (list/glob/read/grep). If a CDN has a
+# transient blip the smoke step may flake - re-run the job before digging in.
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Lint & Smoke Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - run: pnpm install
+
+      - name: Syntax check (node --check)
+        run: node --check skills/libpeek/scripts/libpeek.mjs
+
+      - name: SKILL.md frontmatter check
+        run: |
+          grep -q '^name: libpeek' skills/libpeek/SKILL.md
+          grep -q '^description:' skills/libpeek/SKILL.md
+
+      - name: Smoke test - list
+        run: node skills/libpeek/scripts/libpeek.mjs list react | grep -q '"count"'
+
+      - name: Smoke test - glob
+        run: node skills/libpeek/scripts/libpeek.mjs glob zod package.json | grep -q 'package.json'
+
+      - name: Smoke test - read
+        run: node skills/libpeek/scripts/libpeek.mjs read react package.json | grep -q 'totalLines'
+
+      - name: Smoke test - grep
+        run: node skills/libpeek/scripts/libpeek.mjs grep zod exports --include package.json | grep -q 'matches'
