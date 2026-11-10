@@ -1,0 +1,30 @@
+skills/libpeek/scripts/vfs.mjs
+  s_d50f6e712afc08::t_fd91003b204655 2-6
+AGENTS.md
+  s_d50f6e712afc08::t_eca0ef0efb4e31 68,70,73
+  s_d50f6e712afc08::t_622998478edae0 12-14
+  s_d50f6e712afc08::t_a84b48094ab920 36
+  s_d50f6e712afc08::t_b3acc9297d25f8 43
+skills/libpeek/scripts/index.mjs
+  s_d50f6e712afc08::t_2997b6a31c0e0e 7
+tests/npm.test.mjs
+  s_d50f6e712afc08::t_c6ba9fbeb992fb 11
+skills/libpeek/scripts/npm.mjs
+  s_d50f6e712afc08::t_dcc8bd22e429c5 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "eeb556165b8e3875296b118acf71bfaaf64ae1eb",
+  "prompts": {},
+  "sessions": {
+    "s_d50f6e712afc08": {
+      "agent_id": {
+        "tool": "codefuse",
+        "id": "37a6ab66-9242-442f-9d3f-5445211b600d",
+        "model": "codefuse_official_channel/GLM-5.3-Flash"
+      },
+      "human_author": null
+    }
+  }
+}
