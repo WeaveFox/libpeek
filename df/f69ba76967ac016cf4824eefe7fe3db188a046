@@ -1,0 +1,60 @@
+.github/workflows/ci.yml
+  s_d50f6e712afc08::t_1065b2787b0b73 43-52
+  s_d50f6e712afc08::t_986f3e3b1f02fc 35-40
+  s_d50f6e712afc08::t_b3a09c0a9373d0 32-34
+  s_d50f6e712afc08::t_91eee9c96073ea 41-42
+.husky/commit-msg
+  s_d50f6e712afc08::t_6de7aa3df59f19 1
+package.json
+  s_d50f6e712afc08::t_93c45f16cd172b 9-11
+  s_d50f6e712afc08::t_8cebefb3f4626d 6-8
+  s_d50f6e712afc08::t_4677ffa5e7ae17 12-14
+README.zh-CN.md
+  s_d50f6e712afc08::t_639160f3c1dd70 59
+  s_d50f6e712afc08::t_e80f936b463fd6 25-28
+  s_d50f6e712afc08::t_97ba6c6e383627 35-52
+  s_d50f6e712afc08::t_ea15e2ebd63605 55
+  s_d50f6e712afc08::t_3a5b5f5ad0b533 22-24
+  s_d50f6e712afc08::t_1dec643421dce7 29-34
+  s_d50f6e712afc08::t_74639736de5660 53-54
+  s_d50f6e712afc08::t_e739c644608b08 56-58
+  s_d50f6e712afc08::t_1ac7a32ef0a08c 60-62
+AGENTS.md
+  s_d50f6e712afc08::t_6a6eaec7d02379 19-26
+  s_d50f6e712afc08::t_0e48ad8bd07631 8,38-90
+  s_d50f6e712afc08::t_4086ee0c3e4ccc 5-6
+  s_d50f6e712afc08::t_f2626c054febcc 11-12
+  s_d50f6e712afc08::t_4d34e63e0a0212 2-4
+  s_d50f6e712afc08::t_8adc9390f568ad 7
+  s_d50f6e712afc08::t_d70ca482bf5943 9-10
+  s_d50f6e712afc08::t_7baf8151525518 13-18
+  s_d50f6e712afc08::t_f00d846e9a6b78 27-29,35-37
+README.md
+  s_d50f6e712afc08::t_41a80843baabba 38-55
+  s_d50f6e712afc08::t_e32d52f455a45c 61
+  s_d50f6e712afc08::t_feb7329c2c3c0a 67
+  s_d50f6e712afc08::t_0179b05a962ad2 28-31
+  s_d50f6e712afc08::t_752e0e4463b858 25-27
+  s_d50f6e712afc08::t_0c90165f34628e 32-37
+  s_d50f6e712afc08::t_2a440253cb73b1 56-60
+  s_d50f6e712afc08::t_127da01ccefc97 62-66
+  s_d50f6e712afc08::t_470e6e35baab99 68-70
+skills/libpeek/SKILL.md
+  s_d50f6e712afc08::t_417f3ddbc7a52e 1-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "dff69ba76967ac016cf4824eefe7fe3db188a046",
+  "prompts": {},
+  "sessions": {
+    "s_d50f6e712afc08": {
+      "agent_id": {
+        "tool": "codefuse",
+        "id": "37a6ab66-9242-442f-9d3f-5445211b600d",
+        "model": "codefuse_official_channel/GLM-5.3-Flash"
+      },
+      "human_author": null
+    }
+  }
+}
