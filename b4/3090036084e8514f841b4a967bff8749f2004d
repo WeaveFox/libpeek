@@ -1,0 +1,26 @@
+tests/shim.test.mjs
+  s_d50f6e712afc08::t_60b2c3bb3356fa 1-45
+AGENTS.md
+  s_d50f6e712afc08::t_e554e025fce38b 43-46
+tests/project.test.mjs
+  s_d50f6e712afc08::t_69b7cf0bb63aff 1-53
+tests/npm.test.mjs
+  s_d50f6e712afc08::t_d40a75bb7e10df 104-227
+  s_d50f6e712afc08::t_7ff767b75e7213 1,10-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b43090036084e8514f841b4a967bff8749f2004d",
+  "prompts": {},
+  "sessions": {
+    "s_d50f6e712afc08": {
+      "agent_id": {
+        "tool": "codefuse",
+        "id": "37a6ab66-9242-442f-9d3f-5445211b600d",
+        "model": "codefuse_official_channel/GLM-5.3-Flash"
+      },
+      "human_author": "yunchen.wy <yunchen.wy@antgroup.com>"
+    }
+  }
+}
