@@ -7,6 +7,8 @@
 
 **Browse any npm package like a local node_modules - real source code, no install, no sandbox, no code execution.**
 
+![libpeek](./docs/hero.png)
+
 libpeek reads the actual files of an exact npm package version straight from public CDNs: list the file tree, glob paths (wildcards or fuzzy), read any file, and grep contents - including `.d.ts` type definitions.
 
 Built for AI coding agents in the vibe-coding loop: verify what a library really exports before you import it, instead of trusting training-data memory.

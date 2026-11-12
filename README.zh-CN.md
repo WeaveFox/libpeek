@@ -6,6 +6,8 @@
 
 **像检索本地 node_modules 一样浏览任何 npm 包——真实源码，不安装、无沙箱、不执行代码。**
 
+![libpeek](./docs/hero.png)
+
 libpeek 从公共 CDN 直读指定版本的 npm 包文件：列文件树、glob 匹配（通配符或模糊文件名）、读任意文件、grep 搜索内容（含 `.d.ts` 类型定义）。
 
 为 vibe-coding 场景而生：在 import 之前验证一个库真实导出的 API，而不是相信模型记忆。[English](./README.md)
