@@ -1,0 +1,21 @@
+README.zh-CN.md
+  s_d50f6e712afc08::t_16e34683f38cdf 9-10
+README.md
+  s_d50f6e712afc08::t_f8480862fe8ca2 10-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b0ee5a6ab850854c33510bb6f1ea37e1b8c7a1f8",
+  "prompts": {},
+  "sessions": {
+    "s_d50f6e712afc08": {
+      "agent_id": {
+        "tool": "codefuse",
+        "id": "37a6ab66-9242-442f-9d3f-5445211b600d",
+        "model": "codefuse_official_channel/GLM-5.2"
+      },
+      "human_author": "wang1212 <mrwang1212@126.com>"
+    }
+  }
+}
