@@ -1,14 +1,15 @@
 {
   "name": "libpeek-repo",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "libpeek - read npm package source without installing. Skill repo; zero runtime dependencies.",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "lint": "node --check skills/libpeek/scripts/libpeek.mjs",
-    "smoke:list": "node skills/libpeek/scripts/libpeek.mjs list react",
-    "smoke": "node skills/libpeek/scripts/libpeek.mjs list react && node skills/libpeek/scripts/libpeek.mjs glob zod package.json && node skills/libpeek/scripts/libpeek.mjs read react package.json && node skills/libpeek/scripts/libpeek.mjs grep zod exports --include package.json",
+    "lint": "for f in skills/libpeek/scripts/*.mjs; do node --check \"$f\" || exit 1; done",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "smoke:list": "node skills/libpeek/scripts/index.mjs list react",
+    "smoke": "node skills/libpeek/scripts/index.mjs list react && node skills/libpeek/scripts/index.mjs glob zod package.json && node skills/libpeek/scripts/index.mjs read react package.json && node skills/libpeek/scripts/index.mjs grep '{\"package\":\"zod\",\"pattern\":\"exports\",\"include\":\"package.json\"}'",
     "prepare": "husky"
   },
   "devDependencies": {

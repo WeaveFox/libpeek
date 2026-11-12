@@ -1,9 +1,10 @@
 # CI - Syntax check, SKILL.md frontmatter check, and real-network smoke test.
 #
-# The whole runtime is one auditable script, so CI stays deliberately light:
-# `node --check` for syntax, a grep for the SKILL.md frontmatter, and four
-# real invocations against public CDNs (list/glob/read/grep). If a CDN has a
-# transient blip the smoke step may flake - re-run the job before digging in.
+# The runtime is three small modules (files/npm/index), so CI stays
+# deliberately light: `node --check` per module, node:test unit tests
+# (offline), a grep for the SKILL.md frontmatter, and four real invocations
+# against public CDNs (list/glob/read/grep). If a CDN has a transient blip
+# the smoke step may flake - re-run the job before digging in.
 
 name: CI
 
@@ -31,8 +32,11 @@ jobs:
 
       - run: pnpm install
 
-      - name: Syntax check (node --check)
-        run: node --check skills/libpeek/scripts/libpeek.mjs
+      - name: Syntax check (node --check, every module)
+        run: for f in skills/libpeek/scripts/*.mjs; do node --check "$f" || exit 1; done
+
+      - name: Unit tests (node:test, no network)
+        run: node --test "tests/*.test.mjs"
 
       - name: SKILL.md frontmatter check
         run: |
@@ -40,13 +44,13 @@ jobs:
           grep -q '^description:' skills/libpeek/SKILL.md
 
       - name: Smoke test - list
-        run: node skills/libpeek/scripts/libpeek.mjs list react | grep -q '"count"'
+        run: node skills/libpeek/scripts/index.mjs list react | grep -q '"count"'
 
       - name: Smoke test - glob
-        run: node skills/libpeek/scripts/libpeek.mjs glob zod package.json | grep -q 'package.json'
+        run: node skills/libpeek/scripts/index.mjs glob zod package.json | grep -q 'package.json'
 
       - name: Smoke test - read
-        run: node skills/libpeek/scripts/libpeek.mjs read react package.json | grep -q 'totalLines'
+        run: node skills/libpeek/scripts/index.mjs read react package.json | grep -q 'totalLines'
 
-      - name: Smoke test - grep
-        run: node skills/libpeek/scripts/libpeek.mjs grep zod exports --include package.json | grep -q 'matches'
+      - name: Smoke test - grep (JSON args form)
+        run: node skills/libpeek/scripts/index.mjs grep '{"package":"zod","pattern":"exports","include":"package.json"}' | grep -q 'matches'
