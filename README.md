@@ -3,6 +3,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/WeaveFox/libpeek/ci.yml?branch=main)](https://github.com/WeaveFox/libpeek/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-green)](#prerequisites)
+[![Skills.sh](https://img.shields.io/badge/skills.sh-compatible-blue)](https://www.skills.sh)
 
 **Browse any npm package like a local node_modules - real source code, no install, no sandbox, no code execution.**
 
